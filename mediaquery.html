@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: burlywood;
+            justify-content: space-evenly;
+            padding: 10px 0;
+        }
+        .container .item{
+            height: 300px;
+            width: 24%;
+            background-color: beige;
+            border: 3px solid green;
+
+        }
+        @media screen and (max-width: 900px) {
+            .container{
+                background-color: aquamarine;
+            }
+            .container .item{
+                width: 49%;
+                margin:10px 0 0;
+            }
+            
+        }
+        @media screen and (max-width:500px) {
+            .container{
+                background-color: rgb(64, 156, 126);
+            }
+            .container .item{
+                width: 98%;
+                margin:10px 0 0;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    
+</body>
+</html>
